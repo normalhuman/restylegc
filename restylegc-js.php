@@ -26,7 +26,7 @@ if(count($_GET) > 0) {
  *
  * Edit and uncomment the following line to freeze the calendar version.
  */
-//$url = "http://myserver.tld/path/to/archive/e0437df6468589031e718f3606b03917embedcompiled__en.js";
+$url = "gcal.js";
 
 // Request the javascript
 $ch = curl_init();
