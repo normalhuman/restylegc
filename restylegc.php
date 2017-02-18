@@ -134,8 +134,8 @@ $pattern = '/(<link.*>)/';
 $replacement = '<link rel="stylesheet" type="text/css" href="' . $stylesheet . '" />';
 $buffer = preg_replace($pattern, $replacement, $buffer);
 
-$pattern = '/src="(.*js)"/';
-$replacement = 'src="restylegc-js.php?$1"';  
+$pattern = '/javascript" src="(\/calendar\S*)"/';
+$replacement = 'javascript" src="restylegc-js.php?$1"';  
 $buffer = preg_replace($pattern, $replacement, $buffer);
 
 // Add a hook to the window onload function
